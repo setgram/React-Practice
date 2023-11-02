@@ -9,10 +9,10 @@ export default function TaskForm() {
         <input type="text" className="task_input" placeholder="Enter Task" />
         <div className="task_form_bottom_line">
           <div>
-            <Tag />
-            <Tag />
-            <Tag />
-            <Tag />
+            <Tag name="HTML" />
+            <Tag name="CSS" />
+            <Tag name="JAVASCRIPT" />
+            <Tag name="REACT" />
           </div>
           <div>
             <select name="" id="" className="task_status">

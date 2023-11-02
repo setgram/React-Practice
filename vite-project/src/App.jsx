@@ -1,6 +1,10 @@
 import React from "react";
 import "./App.css";
 import TaskForm from "./components/TaskForm";
+import TaskColumn from "./components/TaskColumn";
+import { GiBullseye } from "react-icons/gi";
+import { AiFillStar } from "react-icons/ai";
+import { BsFillHandThumbsUpFill } from "react-icons/bs";
 
 export default function App() {
   return (
@@ -8,9 +12,9 @@ export default function App() {
       <TaskForm />
       <header className="app_header"></header>
       <main className="app_main">
-        <section className="task_column">Section one</section>
-        <section className="task_column">Section two</section>
-        <section className="task_column">Section three</section>
+        <TaskColumn name="Todo" icon={<GiBullseye />} />
+        <TaskColumn name="On-going" icon={<AiFillStar />} />
+        <TaskColumn name="Accomplish" icon={<BsFillHandThumbsUpFill />} />
       </main>
     </div>
   );
