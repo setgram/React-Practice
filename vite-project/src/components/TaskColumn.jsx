@@ -1,5 +1,4 @@
 import React from "react";
-//import { GiBullseye } from "react-icons/gi";
 import "./TaskColumn.css";
 import TaskCard from "./TaskCard";
 
